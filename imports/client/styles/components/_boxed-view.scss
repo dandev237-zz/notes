@@ -1,0 +1,29 @@
+.boxed-view {
+  background-color: $boxed-view-bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; //Viewport height
+  width: 100vw;  //Viewport width
+}
+
+.boxed-view--modal {
+  background: fade-out($boxed-view-bg-color, .3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.boxed-view__box {
+  background-color: $boxed-view-box-color;
+  padding: 2.4rem;
+  text-align: center;
+  width: 24rem;
+}
+
+.boxed-view__form {
+  display: flex;
+  flex-direction: column;
+}
